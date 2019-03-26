@@ -1,6 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    background: linear-gradient(90deg, #6C1080,#C6161E);
 }
 
 .container {
@@ -12,6 +13,13 @@ body {
   align-items: inherit;
   height: inherit;
   flex-wrap: inherit;
+}
+a {
+    text-decoration: none;
+    
+}
+a:hover {
+    text-decoration: none;
 }
 
 /* header */
@@ -58,24 +66,30 @@ header a {
 }
 header img {
     text-align: center;
+    height: 150px;
+    width: 150px;
   }
 /* header */
 
-/* carrusel */
+/* promos */
+/* promos */
+
+/* cartelera */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.promo h2 {
+.cartelera h2 {
     text-align: center;
     font-size: 40px;
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 80px;
-    background: linear-gradient(90deg, #6C1080,#C6161E);
+    background: linear-gradient(90deg,gold,  white);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    border-bottom: 2px solid yellow;
 }
 
 .slider {
@@ -147,70 +161,18 @@ header img {
         transform: rotateY(360deg);
     }
 }
-
-/* #slider {
-    
-}
-
-#slider figure img {
-    overflow: hidden;
-    width: 20%;
-    float: left;
-    height: 5%;
-}
-
-#slider {
-    position: relative;
-    width: 500%;
-    margin: 0;
-    left: 0;
-    text-align: left;
-    font-size: 0;
-    animation: 20s slider infinite;
-}
-
-@keyframes slider {
- 0% {
-     left: 0;
- }
- 20% {
-     left: 0%;
- }
- 25% {
-     left: -100%; 
- }
- 45% {
-     left: -100%;
- }
- 50% {
-     left: -200%;
- }
- 70% {
-     left: -200%;
- }
- 75% {
-     left: -300%;
- }
- 95% {
-     left: -400%;
- }
- 100% {
-     left: -400%;
- }
-} */
-
-/* carrusel */
+/* cartelera */
 
 /* contacto */
 .contact {
-    background: linear-gradient(90deg, #6C1080,#C6161E);
+    background: linear-gradient(90deg,#C6161E, #6C1080);
     color: white;
     height: 170px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    /* position: absolute; */
+    border-top: 2px solid black;
   }
   .social-link {
     display: inline-block;
@@ -220,7 +182,7 @@ header img {
     background-size: 50px 50px;
   }
   .social-link.facebook {
-    background-image: url('../Images/facebook.svg');
+    background-image: url('../images/facebook.svg');
   } 
   .form-email {
       text-align: center;
@@ -261,6 +223,7 @@ footer {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    border-top: 2px solid black;
 }
 footer a {
     color: white;
@@ -273,3 +236,90 @@ footer a {
 }
 
 /* footer */
+
+/* pagina2 Cartel */
+.cartel {
+    margin: 30px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+.cartel h2 {
+    text-align: left;
+    color: white;
+    border-bottom: 2px solid yellow;
+}
+.cartel img {
+    height: 200px;
+    width: 100%;
+    margin-top: 10px;
+    display: block;
+    margin: auto;
+    padding: 10px;
+}
+#marvel {
+    object-fit: cover;
+    object-position: 0 -100px;
+}
+#shazam {
+    object-fit: cover;
+    object-position: top;
+}
+#spider {
+    object-fit: cover;
+    object-position: 0 -160px;
+}
+#endgame {
+    object-fit: cover;
+    object-position: 0 -418px;
+}
+.cartel .col {
+    border: 2px solid yellow;
+    margin: 10px;
+}
+.cartel h3 {
+    text-align: center;
+}
+
+.horario-button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: blue;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    /* margin: auto; */
+}
+.trailer-button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: blue;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    margin-bottom: 20px;
+}
+.cartel button:hover {
+    background-color: #3e8e41
+}
+.cartel button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+/* pagina2 Cartel */
