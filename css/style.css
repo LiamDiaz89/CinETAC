@@ -1,0 +1,275 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.container {
+  max-width: 1000px;
+  flex: 1;
+  margin: 0 auto;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+  flex-wrap: inherit;
+}
+
+/* header */
+header {
+    color: white;
+    background-color: #484747;
+    /* width: 100%; */
+    display: flex;
+    /* height: 70px; */
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+figure {
+  margin: 0;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+/* .menu {
+  height: inherit;
+} */
+header ul {
+  display: flex;
+  height: inherit;
+}
+header ul li {
+  height: inherit;
+}
+header a {
+  display: flex;
+  align-items: center;
+  height: inherit;
+  padding: 0 10px;
+}
+header img {
+    text-align: center;
+  }
+/* header */
+
+/* carrusel */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.promo h2 {
+    text-align: center;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 80px;
+    background: linear-gradient(90deg, #6C1080,#C6161E);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.slider {
+    width: 450px;
+    margin: auto;
+    perspective: 1000px;
+    position: relative;
+    margin-top: 50px;
+    padding-left: 90px;
+    margin-bottom: 600px;
+    /* margin-right: 2px; */
+}
+
+.img-items {
+    width: 50%;
+    position: absolute;
+    animation: rotar 15s infinite linear;
+    transform-style: preserve-3d;
+}
+
+.img-items figure {
+    width: 100%;
+    height: 120px;
+    /* overflow: hidden; */
+    position: absolute;
+    box-shadow: 0px 0px 20px 0px black;
+    transition: all 300ms;
+}
+
+.img-items figure:hover {
+    box-shadow: 0px 0px 0px 0 black;
+    transition: all 300ms;
+}
+
+.img-items:hover{
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+.img-items figure:nth-child(1) {
+    transform: rotateY(90deg) translateZ(200px);
+}
+.img-items figure:nth-child(2) {
+    transform: rotateY(180deg) translateZ(200px);
+}
+.img-items figure:nth-child(3) {
+    transform: rotateY(270deg) translateZ(200px);
+}
+.img-items figure:nth-child(4) {
+    transform: rotateY(360deg) translateZ(200px);
+}
+
+
+.img-items img {
+    width: 100%;
+    transition: all 300ms;
+}
+
+.img-items img:hover {
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+
+@keyframes rotar {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+/* #slider {
+    
+}
+
+#slider figure img {
+    overflow: hidden;
+    width: 20%;
+    float: left;
+    height: 5%;
+}
+
+#slider {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 20s slider infinite;
+}
+
+@keyframes slider {
+ 0% {
+     left: 0;
+ }
+ 20% {
+     left: 0%;
+ }
+ 25% {
+     left: -100%; 
+ }
+ 45% {
+     left: -100%;
+ }
+ 50% {
+     left: -200%;
+ }
+ 70% {
+     left: -200%;
+ }
+ 75% {
+     left: -300%;
+ }
+ 95% {
+     left: -400%;
+ }
+ 100% {
+     left: -400%;
+ }
+} */
+
+/* carrusel */
+
+/* contacto */
+.contact {
+    background: linear-gradient(90deg, #6C1080,#C6161E);
+    color: white;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* position: absolute; */
+  }
+  .social-link {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    background-size: 50px 50px;
+  }
+  .social-link.facebook {
+    background-image: url('../Images/facebook.svg');
+  } 
+  .form-email {
+      text-align: center;
+      /* margin: auto; */
+  }
+  .form-email input {
+    border-color: gray;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 10px 20px 10px 25px;
+    background-image: url('../images/envelope.svg');
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+  }
+  .form-email button {
+    display: block;
+    background: transparent;
+    color: white;
+    padding: 10px 0;
+    border-radius: 5px;
+    width: 100px;
+    margin: auto;
+    margin-top: 10px;
+    /* margin-bottom: 30px; */
+  }
+  .form-email h3 { 
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+/* contacto */
+
+/* footer */
+footer {
+    color: white;
+    background-color: #484747;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer a {
+    color: white;
+  }
+
+.face {
+    background-image: url('../Images/facebook.svg');
+    width: 100%;
+    height: 100%;;
+}
+
+/* footer */
